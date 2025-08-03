@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Python MCQ Exam Portal</title>
+    <title>E-Commerce MCQ Exam Portal</title>
     <style>
         * {
             margin: 0;
@@ -430,217 +430,218 @@
     <script>
         // Questions data
         const questions = [
-            {
-                id: 1,
-                question: "পাইথন প্রোগ্রামের কোন টোকেন সংখ্যা নির্দেশ করে?",
-                options: ["Keywords", "Literals", "Identifiers", "Operators"],
-                correct: 3
-            },
-            {
-                id: 2,
-                question: "নিচের কোনটি mutable data type?",
-                options: ["Tuple", "String", "List", "Integer"],
-                correct: 2
-            },
-            {
-                id: 3,
-                question: "\"==\" এবং \"is\" এর মধ্যে পার্থক্য কী?",
-                options: ["দুটো একই", "\"==\" মান পরীক্ষা করে, \"is\" identity", "\"is\" মান পরীক্ষা করে", "কোনোটাই না"],
-                correct: 1
-            },
-            {
-                id: 4,
-                question: "পাইথনে কোন operator টি ব্যবহার করে গাণিতিক যোগ করা হয়?",
-                options: ["%", "*", "+", "="],
-                correct: 2
-            },
-            {
-                id: 5,
-                question: "পাইথনের কোন data type এ key-value pair থাকে?",
-                options: ["List", "Tuple", "Set", "Dictionary"],
-                correct: 3
-            },
-            {
-                id: 6,
-                question: "নিচের কোনটি পাইথনের invalid identifier?",
-                options: ["name_1", "*value", "1name", "*data"],
-                correct: 2
-            },
-            {
-                id: 7,
-                question: "পাইথনে কোন ডাটা টাইপ change করা যায় না?",
-                options: ["List", "Dictionary", "Set", "Tuple"],
-                correct: 3
-            },
-            {
-                id: 8,
-                question: "কোন অপারেটরটি 'membership' চেক করে?",
-                options: ["==", "in", "is", "!="],
-                correct: 1
-            },
-            {
-                id: 9,
-                question: "পাইথনে একটি comment শুরু হয়—",
-                options: ["//", "#", "/**", "<!--"],
-                correct: 1
-            },
-            {
-                id: 10,
-                question: "কোনটি implicit type conversion এর উদাহরণ?",
-                options: ["int(3.5)", "float(3)", "3 + 4.5", "str(3) + \"4\""],
-                correct: 2
-            },
-            {
-                id: 11,
-                question: "পাইথনের কোনটি একটি logical operator নয়?",
-                options: ["and", "or", "not", "add"],
-                correct: 3
-            },
-            {
-                id: 12,
-                question: "কোন operator টি remainder প্রদান করে?",
-                options: ["*", "/", "//", "%"],
-                correct: 3
-            },
-            {
-                id: 13,
-                question: "পাইথনে কোন ফাংশনে ইউজার ইনপুট নেয়া যায়?",
-                options: ["enter()", "input()", "scan()", "take()"],
-                correct: 1
-            },
-            {
-                id: 14,
-                question: "পাইথনে error ধরার জন্য কোনটি ব্যবহৃত হয় না?",
-                options: ["try", "catch", "except", "finally"],
-                correct: 1
-            },
-            {
-                id: 15,
-                question: "নিচের কোনটি syntax error নয়?",
-                options: ["print(\"Hello\")", "print \"Hello\"", "if True print(\"Hi\")", "for i in range(5)"],
-                correct: 0
-            },
-            {
-                id: 16,
-                question: "পাইথনে কোন symbol টি exponentiation বোঝাতে ব্যবহার হয়?",
-                options: ["^", "**", "^^", "exp"],
-                correct: 1
-            },
-            {
-                id: 17,
-                question: "int(\"abc\") করলে কি হবে?",
-                options: ["0", "abc", "Error", "None"],
-                correct: 2
-            },
-            {
-                id: 18,
-                question: "কোনটি পাইথনের valid string declaration নয়?",
-                options: ["'Hello'", "\"Hello\"", "'''Hello'''", "Hello"],
-                correct: 3
-            },
-            {
-                id: 19,
-                question: "পাইথনে \"type()\" ফাংশনের কাজ কী?",
-                options: ["টাইপ রিটার্ন করে", "ইনপুট নেয়", "প্রিন্ট করে", "টাইপ পরিবর্তন করে"],
-                correct: 0
-            },
-            {
-                id: 20,
-                question: "কোন function টাইপ কনভার্সন করে?",
-                options: ["convert()", "input()", "int()", "str.length()"],
-                correct: 2
-            },
-            {
-                id: 21,
-                question: "পাইথনের কোন datatype unordered?",
-                options: ["List", "Set", "Tuple", "String"],
-                correct: 1
-            },
-            {
-                id: 22,
-                question: "পাইথনের কোনটি লাইনের শেষে ব্যবহৃত হয় না?",
-                options: [";", "#", "newline", ":"],
-                correct: 1
-            },
-            {
-                id: 23,
-                question: "পাইথনে 'not in' কি বোঝায়?",
-                options: ["Logical error", "Condition true", "Value absent in sequence", "None"],
-                correct: 2
-            },
-            {
-                id: 24,
-                question: "print('3' + 2) এর আউটপুট কী হবে?",
-                options: ["5", "32", "Error", "3+2"],
-                correct: 2
-            },
-            {
-                id: 25,
-                question: "\"\\n\" চিহ্নটি কী বোঝায়?",
-                options: ["Space", "Newline", "Null", "Tab"],
-                correct: 1
-            },
-            {
-                id: 26,
-                question: "পাইথনে কোনটি keyword নয়?",
-                options: ["def", "return", "class", "print"],
-                correct: 3
-            },
-            {
-                id: 27,
-                question: "\"10 > 5 and 5 < 2\" এর ফলাফল কী হবে?",
-                options: ["True", "False", "Error", "None"],
-                correct: 1
-            },
-            {
-                id: 28,
-                question: "কোনটি augmented assignment operator?",
-                options: ["+=", "++", ":=", "=="],
-                correct: 0
-            },
-            {
-                id: 29,
-                question: "পাইথনে \"None\" এর অর্থ কী?",
-                options: ["0", "False", "No value", "Null string"],
-                correct: 2
-            },
-            {
-                id: 30,
-                question: "কোন ফাংশনে একটি string কে integer তে রূপান্তর করা যায়?",
-                options: ["int()", "str()", "eval()", "bool()"],
-                correct: 0
-            },
-            {
-                id: 31,
-                question: "পাইথনের কোন token গুলো fixed meaning রাখে?",
-                options: ["Identifier", "Keywords", "Literals", "Comments"],
-                correct: 1
-            },
-            {
-                id: 32,
-                question: "Python এর কোন বৈশিষ্ট্য নয়?",
-                options: ["High-level", "Object-Oriented", "Platform Dependent", "Interpreted"],
-                correct: 2
-            },
-            {
-                id: 33,
-                question: "কোনটি runtime error হতে পারে?",
-                options: ["Division by zero", "Wrong syntax", "Wrong indentation", "Wrong variable name"],
-                correct: 0
-            },
-            {
-                id: 34,
-                question: "পাইথনের কোনটি punctuation নয়?",
-                options: [",", ":", "=", "+"],
-                correct: 3
-            },
-            {
-                id: 35,
-                question: "\"is not\" অপারেটরটি কি করে?",
-                options: ["Membership check", "Identity check", "Logical check", "Syntax error"],
-                correct: 1
-            }
-        ];
+    {
+        id: 1,
+        question: "ই-কমার্সের কোন মডেলটি সরকার ও নাগরিকদের মধ্যে লেনদেন ব্যাখ্যা করে?",
+        options: ["ব্যবসা থেকে ব্যবসা (B2B)", "গ্রাহক থেকে গ্রাহক (C2C)", "সরকার থেকে নাগরিক (G2C)", "ব্যবসা থেকে গ্রাহক (B2C)"],
+        correct: 2
+    },
+    {
+        id: 2,
+        question: "নিচের কোনটি ই-কমার্সের কারিগরি উপাদান নয়?",
+        options: ["পেমেন্ট গেটওয়ে", "শপিং বট", "ইনভেন্টরি ম্যানেজমেন্ট", "ভোক্তার মনস্তত্ত্ব"],
+        correct: 3
+    },
+    {
+        id: 3,
+        question: "ই-কমার্সের প্রধান লক্ষ্য কী?",
+        options: ["শুধুমাত্র লাভ করা", "বৈশ্বিক বাজারে পৌঁছানো", "অফলাইন বিজ্ঞাপন", "নিম্নমানের পণ্য সরবরাহ"],
+        correct: 1
+    },
+    {
+        id: 4,
+        question: "C2C মডেলের সঠিক উদাহরণ কোনটি?",
+        options: ["ফ্লিপকার্ট", "ওএলএক্স", "আইআরসিটিসি", "অ্যামাজন সেলার সেন্ট্রাল"],
+        correct: 1
+    },
+    {
+        id: 5,
+        question: "G2G মডেল সাধারণত কোন ক্ষেত্রে ব্যবহৃত হয়?",
+        options: ["বেসরকারি লেনদেন", "সরকারের মধ্যে তথ্য আদানপ্রদান", "গ্রাহক সেবা", "পণ্যের হোম ডেলিভারি"],
+        correct: 1
+    },
+    {
+        id: 6,
+        question: "নিচের কোনটি শুধুমাত্র প্রতিষ্ঠানের অভ্যন্তরীণ যোগাযোগের জন্য ব্যবহৃত হয়?",
+        options: ["ইন্টারনেট", "ইন্ট্রানেট", "এক্সট্রানেট", "ওয়াই-ফাই"],
+        correct: 1
+    },
+    {
+        id: 7,
+        question: "ই-কমার্সের একটি বড় অসুবিধা কী?",
+        options: ["পণ্যের বৈচিত্র্য নেই", "সরাসরি পরীক্ষা করা যায় না", "তাত্ক্ষণিক বিতরণ সম্ভব নয়", "সহজে অর্থ প্রদান"],
+        correct: 2
+    },
+    {
+        id: 8,
+        question: "শপিং বট কী করে?",
+        options: ["হ্যাক করে", "পণ্যের প্রস্তাব দেয়", "নতুন পণ্য তৈরি করে", "সার্ভার ভেঙে দেয়"],
+        correct: 1
+    },
+    {
+        id: 9,
+        question: "B2B মডেল কোথায় বেশি ব্যবহৃত হয়?",
+        options: ["ব্যক্তিগত কেনাকাটায়", "সরকারি কার্যালয়ে", "শিল্প প্রতিষ্ঠানগুলোর মধ্যে", "হোস্টেল ব্যবস্থাপনায়"],
+        correct: 2
+    },
+    {
+        id: 10,
+        question: "ই-কমার্সে ইন্ট্রানেট ব্যবহারের মূল উদ্দেশ্য কী?",
+        options: ["বাইরের ক্লায়েন্টদের সাথে যোগাযোগ", "প্রতিষ্ঠানের কর্মীদের সাথে নিরাপদ তথ্য বিনিময়", "শুধুমাত্র মেইল পাঠানো", "ব্রডকাস্টিং সার্ভিস দেওয়া"],
+        correct: 1
+    },
+    {
+        id: 11,
+        question: "এক্সট্রানেটের মূল কাজ কী?",
+        options: ["পাবলিক ডেটা প্রকাশ করা", "কোম্পানির বাইরের অংশীদারদের সাথে তথ্য ভাগ করা", "ইন্টারনেট সংযোগ প্রদান", "সোশ্যাল মিডিয়া চালানো"],
+        correct: 1
+    },
+    {
+        id: 12,
+        question: "B2C ই-কমার্সের উদাহরণ কোনটি?",
+        options: ["ইন্ডাস্ট্রি পারচেজ", "হোলসেল লেনদেন", "অ্যামাজনে কেনাকাটা", "সরকারী টেন্ডার"],
+        correct: 2
+    },
+    {
+        id: 13,
+        question: "নিচের কোনটি ই-কমার্সের একটি লক্ষ্য?",
+        options: ["অফলাইন বিপণন বৃদ্ধি", "ব্যয়ের পরিমাণ বাড়ানো", "উন্নত গ্রাহক সেবা", "কাগজ ভিত্তিক বিলিং বাড়ানো"],
+        correct: 2
+    },
+    {
+        id: 14,
+        question: "ই-কমার্সে নিরাপত্তার প্রধান চ্যালেঞ্জ কী?",
+        options: ["দ্রুত ডেলিভারি", "সস্তা পণ্য", "সাইবার হ্যাকিং", "শিপিং চার্জ"],
+        correct: 2
+    },
+    {
+        id: 15,
+        question: "নিচের কোনটি C2B মডেলের উদাহরণ?",
+        options: ["Freelancer ওয়েবসাইট", "ফ্লিপকার্ট", "IRCTC", "ভারত সরকার"],
+        correct: 0
+    },
+    {
+        id: 16,
+        question: "কোন প্রযুক্তি ব্যবহার করে ইনভেন্টরি অটোমেশন সম্ভব হয়?",
+        options: ["ব্লুটুথ", "আরএফআইডি (RFID)", "টেলিগ্রাম বট", "ওয়ার্ড প্রসেসর"],
+        correct: 1
+    },
+    {
+        id: 17,
+        question: "ই-কমার্সে SEO-এর ভূমিকা কী?",
+        options: ["পেমেন্ট প্রসেস করা", "সার্চ র‍্যাংক বাড়ানো", "সার্ভার বানানো", "শপিং বট চালানো"],
+        correct: 1
+    },
+    {
+        id: 18,
+        question: "নিচের কোনটি ই-কমার্স ওয়েব প্রোমোশনের উপায়?",
+        options: ["Newspaper বিজ্ঞাপন", "Google Ads", "চিত্র প্রদর্শনী", "বেনার হোর্ডিং"],
+        correct: 1
+    },
+    {
+        id: 19,
+        question: "ডিজিটাল পেমেন্টের একটি উদাহরণ কোনটি?",
+        options: ["কাগজের চেক", "ইউপিআই (UPI)", "নগদ লেনদেন", "ব্যাংক পাসবই"],
+        correct: 1
+    },
+    {
+        id: 20,
+        question: "ই-কমার্স ব্যবস্থার একটি সুবিধা কী?",
+        options: ["২৪ ঘণ্টা উপলব্ধতা", "শুধুমাত্র দিন বেলায় কাজ", "শারীরিক উপস্থিতি আবশ্যক", "শুধুমাত্র নগদে লেনদেন"],
+        correct: 0
+    },
+    {
+        id: 21,
+        question: "ই-কমার্সের মাধ্যমে কোনটি সম্ভব নয়?",
+        options: ["তাত্ক্ষণিক রিফান্ড", "পণ্যের গন্ধ বোঝা", "লাইভ ট্র্যাকিং", "অনলাইন পেমেন্ট"],
+        correct: 1
+    },
+    {
+        id: 22,
+        question: "ই-কমার্সের মাধ্যমে ছোট ব্যবসার কী সুবিধা হয়?",
+        options: ["শুধু লোকাল রিচ", "গ্লোবাল মার্কেটে প্রবেশ", "অফলাইন স্টোর প্রয়োজন", "হ্যান্ড ডেলিভারি বাধ্যতামূলক"],
+        correct: 1
+    },
+    {
+        id: 23,
+        question: "নিচের কোনটি ওয়েব হোস্টিংয়ের প্রকার নয়?",
+        options: ["শেয়ার্ড হোস্টিং", "ক্লাউড হোস্টিং", "ডেডিকেটেড হোস্টিং", "ই-কমার্স হোস্টিং"],
+        correct: 3
+    },
+    {
+        id: 24,
+        question: "ই-কমার্স সাইটের পণ্যের তথ্য সংরক্ষণ হয় কোথায়?",
+        options: ["HTML ফাইলে", "সার্ভারে থাকা ডাটাবেসে", "ইউজারের ফোনে", "Excel শিটে"],
+        correct: 1
+    },
+    {
+        id: 25,
+        question: "ই-কমার্স ব্যবসায় কাস্টমার রিলেশন ম্যানেজমেন্ট (CRM) ব্যবহৃত হয় কেন?",
+        options: ["পণ্য তৈরি করতে", "গ্রাহকের চাহিদা বুঝতে ও সেবা উন্নত করতে", "ইনভেন্টরি চেক করতে", "অ্যাপ বানাতে"],
+        correct: 1
+    },
+    {
+        id: 26,
+        question: "একজন গ্রাহক অন্য গ্রাহককে ব্যবহৃত পণ্য বিক্রি করলে তা কোন মডেল?",
+        options: ["B2B", "C2C", "G2B", "B2C"],
+        correct: 1
+    },
+    {
+        id: 27,
+        question: "ই-কমার্সে CAPTCHA ব্যবহারের উদ্দেশ্য কী?",
+        options: ["পাসওয়ার্ড সেভ করা", "স্প্যাম রোধ করা", "অর্ডার কনফার্ম করা", "লগইন পেইজ ডিজাইন"],
+        correct: 1
+    },
+    {
+        id: 28,
+        question: "SSL সার্টিফিকেট ব্যবহৃত হয় কেন?",
+        options: ["ওয়েবসাইট র‍্যাংক বাড়াতে", "গ্রাহকের তথ্য এনক্রিপ্ট করতে", "ছবি আপলোড করতে", "রেফারেন্স দিতে"],
+        correct: 1
+    },
+    {
+        id: 29,
+        question: "ই-কমার্সে cookie ব্যবহৃত হয় কী উদ্দেশ্যে?",
+        options: ["ব্যান্ডউইথ বাড়ানোর জন্য", "ইউজারের ব্রাউজিং তথ্য রাখতে", "অ্যাপ্লিকেশন আপডেট করতে", "ডিসপ্লে রিফ্রেশ করতে"],
+        correct: 1
+    },
+    {
+        id: 30,
+        question: "ই-কমার্স পোর্টালের homepage-এ প্রধানত কী থাকে?",
+        options: ["সেলারের মোবাইল নম্বর", "ক্যাটেগরি লিস্ট, অফার, সার্চ বার", "পিডিএফ ডাউনলোড অপশন", "পেমেন্ট গেটওয়ে লিংক"],
+        correct: 1
+    },
+    {
+        id: 31,
+        question: "ডিজিটাল ওয়ালেট কোন প্রক্রিয়ার অন্তর্ভুক্ত?",
+        options: ["অফলাইন পেমেন্ট", "মোবাইল পেমেন্ট", "পোস্ট অফিস লেনদেন", "চেক ক্লিয়ারিং"],
+        correct: 1
+    },
+    {
+        id: 32,
+        question: "ই-কমার্সের মাধ্যমে সরকারি সেবার সরবরাহ কোন মডেলে পড়ে?",
+        options: ["G2C", "B2B", "B2C", "C2B"],
+        correct: 0
+    },
+    {
+        id: 33,
+        question: "একজন ইউজার নিজের তৈরি পণ্য ওয়েবসাইটে বিক্রি করছেন — এটি কোন মডেল?",
+        options: ["G2G", "C2B", "B2B", "G2C"],
+        correct: 1
+    },
+    {
+        id: 34,
+        question: "ই-কমার্স ওয়েবসাইটে FAQ অংশের উদ্দেশ্য কী?",
+        options: ["লেনদেন বন্ধ করা", "কাস্টমার কনফিউশন কমানো", "শুধু বিজ্ঞাপন দেখানো", "লগআউট অপশন রাখা"],
+        correct: 1
+    },
+    {
+        id: 35,
+        question: "ওয়েবসাইটের 'cart' ফিচারটি কী কাজ করে?",
+        options: ["পেমেন্ট কনফার্ম করে", "অর্ডার ক্যানসেল করে", "নির্বাচিত পণ্যগুলো সাময়িকভাবে সংরক্ষণ করে", "ইউজারের প্রোফাইল দেখায়"],
+        correct: 2
+    }
+];
+
 
         let timeLeft = 75 * 60; // 75 minutes in seconds
         let timerInterval;
