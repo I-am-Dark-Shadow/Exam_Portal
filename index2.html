@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professional E-Commerce MCQ Exam Portal</title>
+    <title>Professional Python MCQ Exam Portal</title>
     <style>
         * {
             margin: 0;
@@ -1126,10 +1126,10 @@
                         ← পূর্ববর্তী
                     </button>
                     <button class="action-btn btn-save" onclick="saveAnswer()">
-                        💾 সংরক্ষণ
+                        💾 Save
                     </button>
                     <button class="action-btn btn-skip" onclick="skipQuestion()">
-                        ⏭️ এড়িয়ে যান
+                        ⏭️ Skip
                     </button>
                     <button class="action-btn btn-next" id="nextBtn" onclick="nextQuestion()">
                         পরবর্তী →
@@ -1185,7 +1185,218 @@
 
     <script>
         // Questions data
-        
+        const questions = [
+    {
+        id: 1,
+        question: "নিচের কোনটি Run-time Error এর উদাহরণ?",
+        options: ["Syntax ভুল", "ZeroDivisionError", "Variable ভুল নাম", "Indentation ভুল"],
+        correct: 1
+    },
+    {
+        id: 2,
+        question: "‘if’, ‘elif’, ‘else’ statements ব্যবহৃত হয় কেন?",
+        options: ["Iteration জন্য", "Multiple conditions evaluate করার জন্য", "String যুক্ত করার জন্য", "Loop বন্ধ করার জন্য"],
+        correct: 1
+    },
+    {
+        id: 3,
+        question: "নিচের কোনটি Valid flow of control নয়?",
+        options: ["Sequential", "Iterative", "Conditional", "Declarative"],
+        correct: 3
+    },
+    {
+        id: 4,
+        question: "while loop কবে শেষ হয়?",
+        options: ["যখন False condition আসে", "যখন break ব্যবহার হয়", "infinite চলতেই থাকে", "সব উপরেরই হতে পারে"],
+        correct: 3
+    },
+    {
+        id: 5,
+        question: "‘pass’ স্টেটমেন্টের কাজ কী?",
+        options: ["লুপ থামায়", "নতুন ভ্যারিয়েবল তৈরি করে", "খালি ব্লক allow করে", "Syntax check করে"],
+        correct: 2
+    },
+    {
+        id: 6,
+        question: "len(\"Python\") এর আউটপুট কী?",
+        options: ["6", "5", "7", "Error"],
+        correct: 0
+    },
+    {
+        id: 7,
+        question: "নিচের কোন ফাংশনটি string কে uppercase করে?",
+        options: ["lower()", "title()", "capitalize()", "upper()"],
+        correct: 3
+    },
+    {
+        id: 8,
+        question: "\"abc123\".isalnum() রিটার্ন করবে?",
+        options: ["True", "False", "Error", "None"],
+        correct: 0
+    },
+    {
+        id: 9,
+        question: "‘continue’ কী করে?",
+        options: ["loop বন্ধ করে", "loop এর পর jump করে", "current iteration skip করে", "code execute বন্ধ করে"],
+        correct: 2
+    },
+    {
+        id: 10,
+        question: "range(1, 6, 2) এর আউটপুট?",
+        options: ["1 2 3 4 5", "1 3 5", "1 4 6", "2 4 6"],
+        correct: 1
+    },
+    {
+        id: 11,
+        question: "\"Python\"[-2] এর আউটপুট কী?",
+        options: ["h", "o", "t", "n"],
+        correct: 1
+    },
+    {
+        id: 12,
+        question: "‘isalpha()’ ফাংশনের কাজ কী?",
+        options: ["Alphabet চেক করে", "Digit চেক করে", "Symbol চেক করে", "None"],
+        correct: 0
+    },
+    {
+        id: 13,
+        question: "\"abc\".find(\"d\") রিটার্ন করে?",
+        options: ["Error", "None", "-1", "0"],
+        correct: 2
+    },
+    {
+        id: 14,
+        question: "‘rstrip()’ string থেকে কী রিমুভ করে?",
+        options: ["left space", "right space", "all spaces", "new line"],
+        correct: 1
+    },
+    {
+        id: 15,
+        question: "for loop এর মধ্যে break দিলে কী হয়?",
+        options: ["Loop skip হয়", "loop বন্ধ হয়", "next iteration হয়", "error দেয়"],
+        correct: 1
+    },
+    {
+        id: 16,
+        question: "Syntax error কখন হয়?",
+        options: ["Runtime এর সময়", "Code লিখার সময়", "Loop চলাকালীন", "Function এর সময়"],
+        correct: 1
+    },
+    {
+        id: 17,
+        question: "‘isdigit()’ কোন value এর জন্য True?",
+        options: ["\"12a\"", "\"123\"", "\"abc\"", "\"12.5\""],
+        correct: 1
+    },
+    {
+        id: 18,
+        question: "‘if-elif-else’ কী?",
+        options: ["loop", "conditional chain", "error", "string"],
+        correct: 1
+    },
+    {
+        id: 19,
+        question: "‘startswith(“Py”)’ এর কাজ কী?",
+        options: ["string শুরু হয় কিনা check করে", "শেষ হয় কিনা check করে", "split করে", "replace করে"],
+        correct: 0
+    },
+    {
+        id: 20,
+        question: "\"hello world\".title() এর আউটপুট?",
+        options: ["Hello world", "Hello World", "HELLO WORLD", "hello World"],
+        correct: 1
+    },
+    {
+        id: 21,
+        question: "\"abc\".replace(\"a\", \"z\") এর আউটপুট?",
+        options: ["zbc", "azc", "abc", "abz"],
+        correct: 0
+    },
+    {
+        id: 22,
+        question: "Loop এর মধ্যে nested loop ব্যবহারের উদ্দেশ্য কী?",
+        options: ["Code লম্বা করা", "Complex iteration তৈরি করা", "Error আনতে", "None"],
+        correct: 1
+    },
+    {
+        id: 23,
+        question: "while loop infinite হলে কী ব্যবহার করা উচিত?",
+        options: ["break", "continue", "return", "pass"],
+        correct: 0
+    },
+    {
+        id: 24,
+        question: "\"Python\"[1:4] এর ফলাফল কী?",
+        options: ["yth", "Pyt", "ytho", "ython"],
+        correct: 0
+    },
+    {
+        id: 25,
+        question: "‘isspace()’ কোন string এর জন্য True?",
+        options: ["\" \"", "\"a b\"", "\"\\n\"", "\"ab\""],
+        correct: 0
+    },
+    {
+        id: 26,
+        question: "‘partition()’ কী করে?",
+        options: ["string কেটে 3 অংশে ভাগ করে", "string uppercase করে", "string join করে", "replace করে"],
+        correct: 0
+    },
+    {
+        id: 27,
+        question: "নিচের কোনটা syntax error?",
+        options: ["if x=5", "print(\"hello\")", "for i in range(3):", "x = 5"],
+        correct: 0
+    },
+    {
+        id: 28,
+        question: "for i in range(3): print(i) এর আউটপুট?",
+        options: ["1 2 3", "0 1 2", "0 1 2 3", "Error"],
+        correct: 1
+    },
+    {
+        id: 29,
+        question: "\"Python\".index(\"t\") এর রিটার্ন?",
+        options: ["2", "3", "1", "0"],
+        correct: 0
+    },
+    {
+        id: 30,
+        question: "‘capitalize()’ ফাংশনের কাজ কী?",
+        options: ["string এর প্রথম letter capital করে", "সব letter uppercase করে", "সব letter lowercase করে", "string reverse করে"],
+        correct: 0
+    },
+    {
+        id: 31,
+        question: "\"Python\".isupper() রিটার্ন করবে?",
+        options: ["True", "False", "None", "Error"],
+        correct: 1
+    },
+    {
+        id: 32,
+        question: "‘split()’ ফাংশনের কাজ কী?",
+        options: ["String ভাগ করে list বানায়", "String uppercase করে", "String sort করে", "Loop তৈরি করে"],
+        correct: 0
+    },
+    {
+        id: 33,
+        question: "‘endswith(\"n\")’ কোন string এ True দেবে?",
+        options: ["\"Run\"", "\"Pan\"", "\"Pin\"", "সবগুলো"],
+        correct: 3
+    },
+    {
+        id: 34,
+        question: "নিচের কোনটি Error টাইপ নয়?",
+        options: ["Syntax", "Logical", "Terminal", "Runtime"],
+        correct: 2
+    },
+    {
+        id: 35,
+        question: "‘join()’ method কী কাজ করে?",
+        options: ["List কে string বানায়", "String কে list বানায়", "String remove করে", "None"],
+        correct: 0
+    }
+];
 
         let timeLeft = 75 * 60; // 75 minutes in seconds
         let timerInterval;
